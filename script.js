@@ -6,11 +6,6 @@ const page = document.querySelector('.iron');
 const updateButton =document.querySelector('#mount');
 
 
-
-updateButton.addEventListener('click', ()=>{
-    page.classList.toggle('active');
-});
-
 menuBar.addEventListener('click', ()=>{
     navBar.classList.add('active');
 });
@@ -21,6 +16,10 @@ closeIcon.addEventListener('click', ()=>{
 
 btnpopup.addEventListener('click', ()=>{
     navBar.classList.remove('active');
+});
+
+updateButton.addEventListener('click', ()=>{
+    page.classList.toggle('active');
 });
 
 window.addEventListener("scroll", function(){
